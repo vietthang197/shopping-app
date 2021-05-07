@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping-app';
+  currentFeature = 'recipes';
+
+  updateCurentFeature($event: string) {
+    this.currentFeature = $event;
+  }
 }
